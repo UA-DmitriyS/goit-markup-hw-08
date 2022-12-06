@@ -1,0 +1,41 @@
+.heder {
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  z-index: 10;
+}
+.container-head {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.heder-cont {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc (16/14);
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  fill: #757575;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--logo-text-color);
+    fill: #2196f3;
+  }
+}
+.heder-cont span {
+  margin-left: 10px;
+}
+
+.contacts {
+  display: inline-flex;
+  margin-left: auto;
+  gap: 30px;
+}
+.contacts.heder-cont:last-child {
+  margin-left: 50px;
+}

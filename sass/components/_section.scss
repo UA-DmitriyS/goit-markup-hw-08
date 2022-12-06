@@ -1,0 +1,15 @@
+.section--gray {
+  background-color: #f5f4fa;
+}
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
