@@ -32,9 +32,17 @@
 }
 
 .contacts {
-  display: inline-flex;
-  margin-left: auto;
-  gap: 30px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .contacts.heder-cont:last-child {
   margin-left: 50px;

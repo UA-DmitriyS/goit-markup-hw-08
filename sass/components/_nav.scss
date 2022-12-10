@@ -3,6 +3,13 @@
   align-items: center;
 }
 
+.nav__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .nav__item {
   margin-right: 50px;
 }
@@ -46,8 +53,4 @@
   opacity: 0;
   transition: 250ms;
   background-color: #2196f3;
-}
-
-.nav__list {
-  display: flex;
 }

@@ -1,12 +1,24 @@
 .ftr {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #2f303a;
 }
 
+.adress {
+  display: flex;
+  margin-bottom: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media screen and(min-width:1200px) {
+    margin-right: 70px;
+  }
+}
 .logo-ftr {
   display: block;
   margin-bottom: 20px;
@@ -82,6 +94,14 @@
 }
 .link-ftr {
   display: inline;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-link-title {
@@ -103,12 +123,21 @@
   fill: #fff;
 }
 .footer {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
-.link-ftr {
-  margin-left: 70px;
-}
+// .link-ftr {
+//   margin-left: 70px;
+// }
 .form-ftr {
   display: flex;
   gap: 10px;
@@ -124,8 +153,14 @@
   margin-left: 10px;
 }
 .message {
-  margin-left: auto;
-  align-items: baseline;
+  // margin-left: auto;
+  // align-items: baseline;
+  display: inline;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .form-ftr {
   display: flex;

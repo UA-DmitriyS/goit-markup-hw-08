@@ -8,8 +8,18 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
+
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
