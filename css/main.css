@@ -351,13 +351,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-}
-
-.adv__item {
-  width: 270px;
 }
 
 .adv__icon {
@@ -412,6 +406,18 @@ img {
   width: auto;
   padding-bottom: 30px;
   color: var(--text-color);
+}
+@media screen and (min-width: 768px) {
+  .adv__text {
+    width: 354px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adv__text {
+    width: 270px;
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -624,8 +630,8 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_pict.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_pict.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_pict.);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_pict.);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -743,6 +749,9 @@ img {
 .heder {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 10;
 }
 
@@ -833,6 +842,36 @@ img {
   background-color: #2f303a;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    align-items: baseline;
+    text-align: initial;
+  }
+}
+
 .logo-ftr {
   display: block;
   margin-bottom: 20px;
@@ -903,7 +942,7 @@ img {
 
 .ftr-contakt {
   display: block;
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .social-footer {
@@ -938,24 +977,36 @@ img {
   fill: #fff;
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .link-ftr {
-  margin-left: 70px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .link-ftr {
+    margin-left: 70px;
+  }
 }
 
 .form-ftr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .form-ftr {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 10px;
+  }
 }
 
 .ftr-button {
@@ -976,10 +1027,15 @@ img {
 }
 
 .message {
-  margin-left: auto;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .message {
+    margin-left: auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .form-ftr {
@@ -1003,7 +1059,7 @@ img {
 
 .mail-inp {
   background-color: transparent;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1014,6 +1070,11 @@ img {
   color: #ffffff;
   -webkit-transition: border-color 250ms;
   transition: border-color 250ms;
+}
+@media screen and (min-width: 1200px) {
+  .mail-inp {
+    width: 358px;
+  }
 }
 
 .ftr-button {
@@ -1440,6 +1501,7 @@ img {
 
 .menu-toggle {
   margin-left: auto;
+  margin-right: 15px;
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
