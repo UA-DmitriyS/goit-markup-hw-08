@@ -63,19 +63,19 @@
         aria-controls="mobile-menu"
       >
         <svg width="40" height="40">
-          <use href="./icons.svg#icon-menu_40px"></use>
+          <use href="./icons.svg#icon-open-menu"></use>
         </svg>
       </button>
     </header>
 
     <main>
       <!--===================== Hero================ -->
-      <!-- <section class="hero section overlay">
+      <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn__hero" data-modal-open type="button">
+        <button class="hero__btn" type="button" data-modal-open>
           Замовити послугу
         </button>
-      </section> -->
+      </section>
 
       <!--==================== ADV SECTION ======================= -->
       <section class="section">
@@ -140,37 +140,20 @@
           <h3 class="section__title">Чим ми займаємося</h3>
           <ul class="about__list list">
             <li class="about__img">
-              <picture>
-                <source
-                  srcset="
-                    ./images/image-descktop/box11.webp    1x,
-                    ./images/image-descktop/box11@2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-descktop/box11.jpg    1x,
-                    ./images/image-descktop/box11@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
+              <img
+                src="./images/img_o.jpg"
+                alt="розробка"
+                width="370"
+                height="294"
+              />
 
-                <img
-                  src="./images/image-descktop/box11.jpg"
-                  alt="розробка"
-                  width="370"
-                  height="294"
-                />
-              </picture>
               <div class="about__overlay">
                 <p class="about__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="about__img">
               <img
-                src="./images/image-descktop/box12.jpg"
+                src="./images/img_t.jpg"
                 alt="розробка1"
                 width="370"
                 height="294"
@@ -181,7 +164,7 @@
             </li>
             <li class="about__img">
               <img
-                src="./images/image-descktop/box13.jpg"
+                src="./images/img_th.jpg"
                 alt="розробка2"
                 width="370"
                 height="294"
@@ -199,60 +182,19 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__card">
-              <picture>
-                <source
-                  srcset="
-                    ./images/image-descktop/igor.webp             1x,
-                    ./images/image-descktop/img-desc-igor@2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-descktop/igor.jpg             1x,
-                    ./images/image-descktop/img-desc-igor@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
+              <img
+                srcset="
+                  ./images\team\phone\ig-470-ph-sc@1x.png 470w,
+                  ./images\team\phone\ig-470-ph-sc@2x.png 940w,
+                  ./images/comand/md/1-354-md-sc@1x.png   354w,
+                  ./images/comand/md/1-354-md-sc@2x.png   708w,
+                  ./images/comand/lg/1-270-lg-sc@1x.png   270w,
+                  ./images/comand/lg/1-270-lg-sc@2x.png   540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                alt="Ігор Дем'яненко"
+              />
 
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-igor.webp    1x,
-                    ./images/image-tablet/img-tab-igor@2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./image/image-tablet/img-tab-igor.jpg    1x,
-                    ./image/image-tablet/img-tab-igor@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-igor.webp    1x,
-                    ./images/image-mobile/img-mob-igor@2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-igor.jpg    1x,
-                    ./images/image-mobile/img-mob-igor@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  src="./images/image-mobile/img-mob-igor.jpg"
-                  alt="Ігор Дем'яненко"
-                  width="100%"
-                />
-              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -310,60 +252,12 @@
               </div>
             </li>
             <li class="team__card">
-              <picture>
-                <source
-                  srcset="
-                    ./images/image-descktop/olia.webp             1x,
-                    ./images/image-descktop/img-desc-olga@2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-descktop/olia.jpg             1x,
-                    ./images/image-descktop/img-desc-olga@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
+              <img
+                src="./images/peoples/img(1).jpg"
+                alt="Ольга Рєпіна"
+                width="100%"
+              />
 
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-olga.webp    1x,
-                    ./images/image-tablet/img-tab-olga@2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-olga.jpg    1x,
-                    ./images/image-tablet/img-tab-olga@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-olga.webp    1x,
-                    ./images/image-mobile/img-mob-olga@2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-olga.jpg    1x,
-                    ./images/image-mobile/img-mob-olga@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  src="./images/image-mobile/img-mob-olga.jpg"
-                  alt="Ольга Рєпіна"
-                  width="100%"
-                />
-              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -422,60 +316,12 @@
             </li>
 
             <li class="team__card">
-              <picture>
-                <source
-                  srcset="
-                    ./images/image-descktop/kolia.webp              1x,
-                    ./images/image-descktop/img-desc-mukola@2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-descktop/kolia.jpg              1x,
-                    ./images/image-descktop/img-desc-mukola@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
+              <img
+                src="./images/peoples/img(2).jpg"
+                alt="Микола Тарасов"
+                width="100%"
+              />
 
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-mukola.webp    1x,
-                    ./images/image-tablet/img-tab-mukola@2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-mukola.jpg    1x,
-                    ./images/image-tablet/img-tab-mukola@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-mukola.webp    1x,
-                    ./images/image-mobile/img-mob-mukola@2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-mukola.jpg    1x,
-                    ./images/image-mobile/img-mob-mukola@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  src="./images/image-mobile/img-mob-mukola.jpg"
-                  alt="Микола Тарасов"
-                  width="100%"
-                />
-              </picture>
               <div class="team__box">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -537,61 +383,12 @@
               </div>
             </li>
             <li class="team__card">
-              <picture>
-                <source
-                  srcset="
-                    ./images/image-descktop/misha.webp               1x,
-                    ./images/image-descktop/img-desc-muhailo@2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-descktop/misha.jpg               1x,
-                    ./images/image-descktop/img-desc-muhailo@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
+              <img
+                src="./images/peoples/img(3).jpg"
+                alt="Михайло Єрмаков"
+                width="100%"
+              />
 
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-muhailo.webp    1x,
-                    ./images/image-tablet/img-tab-muhailo@2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-tablet/img-tab-muhailo.jpg    1x,
-                    ./images/image-tablet/img-tab-muhailo@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-muhailo.webp    1x,
-                    ./images/image-mobile/img-mob-muhailo@2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/image-mobile/img-mob-muhailo.jpg    1x,
-                    ./images/image-mobile/img-mob-muhailo@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-
-                <img
-                  src="./images/image-mobile/img-mob-muhailo.jpg"
-                  alt="Михайло Єрмаков"
-                  width="100%"
-                />
-              </picture>
               <div class="team__box">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -891,18 +688,9 @@
     <!-- ==============Mobile menu========== -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg width="40" height="40" viewBox="0 0 20 20">
+          <use href="./icons.svg#icon-close-menu"></use>
+          >
         </svg>
       </button>
 

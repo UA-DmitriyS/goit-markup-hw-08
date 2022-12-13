@@ -23,23 +23,23 @@
 }
 
 .menu-toggle {
-  margin-left: auto;
-  margin-right: 15px;
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
+  fill: #212121;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .menu-toggle {
     display: none;
   }
@@ -47,7 +47,8 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: #2196f3;
+  transform: transition;
 }
 
 .menu-container {
