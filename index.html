@@ -141,7 +141,10 @@
           <ul class="about__list list">
             <li class="about__img">
               <img
-                src="./images/img_o.jpg"
+                srcset="
+                  ./images/about/1-img@1x.png 1x,
+                  ./images/about/1-img@2x.png 2x
+                "
                 alt="розробка"
                 width="370"
                 height="294"
@@ -153,7 +156,10 @@
             </li>
             <li class="about__img">
               <img
-                src="./images/img_t.jpg"
+                srcset="
+                  ./images/about/2-img@1x.png 1x,
+                  ./images/about/2-img@2x.png 2x
+                "
                 alt="розробка1"
                 width="370"
                 height="294"
@@ -164,7 +170,10 @@
             </li>
             <li class="about__img">
               <img
-                src="./images/img_th.jpg"
+                srcset="
+                  ./images/about/3-img@1x.png 1x,
+                  ./images/about/3-img@2x.png 2x
+                "
                 alt="розробка2"
                 width="370"
                 height="294"
@@ -184,12 +193,12 @@
             <li class="team__card">
               <img
                 srcset="
-                  ./images\team\phone\ig-470-ph-sc@1x.png 470w,
-                  ./images\team\phone\ig-470-ph-sc@2x.png 940w,
-                  ./images/comand/md/1-354-md-sc@1x.png   354w,
-                  ./images/comand/md/1-354-md-sc@2x.png   708w,
-                  ./images/comand/lg/1-270-lg-sc@1x.png   270w,
-                  ./images/comand/lg/1-270-lg-sc@2x.png   540w
+                  ./images/team/phone/ig-470-ph-sc@1x.png   470w,
+                  ./images/team/phone/ig-470-ph-sc@2x.png   940w,
+                  ./images/team/tablet/ig-354-tab-sc@1x.png 354w,
+                  ./images/team/tablet/ig-354-tab-sc@2x.png 708w,
+                  ./images/team/desktop/ig-270-dt-sc@1x.png 270w,
+                  ./images/team/desktop/ig-270-dt-sc@2x.png 540w
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Ігор Дем'яненко"
@@ -253,9 +262,16 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/peoples/img(1).jpg"
+                srcset="
+                  ./images/team/phone/ol-470-ph-sc@1x.png   470w,
+                  ./images/team/phone/ol-470-ph-sc@2x.png   940w,
+                  ./images/team/tablet/ol-354-tab-sc@1x.png 354w,
+                  ./images/team/tablet/ol-354-tab-sc@2x.png 708w,
+                  ./images/team/desktop/ol-270-dt-sc@1x.png 270w,
+                  ./images/team/desktop/ol-270-dt-sc@2x.png 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Ольга Рєпіна"
-                width="100%"
               />
 
               <div class="team__box">
@@ -317,9 +333,16 @@
 
             <li class="team__card">
               <img
-                src="./images/peoples/img(2).jpg"
+                srcset="
+                  ./images/team/phone/ko-470-ph-sc@1x.png   470w,
+                  ./images/team/phone/ko-470-ph-sc@2x.png   940w,
+                  ./images/team/tablet/ko-354-tab-sc@1x.png 354w,
+                  ./images/team/tablet/ko-354-tab-sc@2x.png 708w,
+                  ./images/team/desktop/ko-270-dt-sc@1x.png 270w,
+                  ./images/team/desktop/ko-270-dt-sc@2x.png 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Микола Тарасов"
-                width="100%"
               />
 
               <div class="team__box">
@@ -384,9 +407,16 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/peoples/img(3).jpg"
+                srcset="
+                  ./images/team/phone/mi-470-ph-sc@1x.png   470w,
+                  ./images/team/phone/mi-470-ph-sc@2x.png   940w,
+                  ./images/team/tablet/mi-354-tab-sc@1x.png 354w,
+                  ./images/team/tablet/mi-354-tab-sc@2x.png 708w,
+                  ./images/team/desktop/mi-270-dt-sc@1x.png 270w,
+                  ./images/team/desktop/mi-270-dt-sc@2x.png 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Михайло Єрмаков"
-                width="100%"
               />
 
               <div class="team__box">
@@ -606,8 +636,8 @@
         </div>
       </div>
     </footer>
-    <!-- MODAL Window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <!-- ==========MODAL Window=============== -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-icon" width="11" height="11">
@@ -683,9 +713,10 @@
           <button class="modal-form-btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
-    <!-- ==============Mobile menu========== -->
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <!-- ===== MODAL Window ======= -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="40" height="40" viewBox="0 0 20 20">
@@ -695,7 +726,7 @@
       </button>
 
       <ul class="mobile-menu">
-        <li class="mobile-menu-item">
+        <li class="mobile-menu-item active">
           <a class="mobile-menu-link link" href="">Студія</a>
         </li>
         <li class="mobile-menu-item">
@@ -707,10 +738,14 @@
       </ul>
       <ul class="mobile-contacts list">
         <li class="mobile-contacts-item">
-          <a href="" class="mobile-contacts-link link">+38 096 111 11 11</a>
+          <a href="" class="mobile-contacts-link mobile__phone link"
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile-contacts-item">
-          <a href="" class="mobile-contacts-link link">info@devstudio.com</a>
+          <a href="" class="mobile-contacts-link mobile__mail link"
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
 

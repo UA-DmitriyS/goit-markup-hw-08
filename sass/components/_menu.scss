@@ -47,7 +47,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  fill: #2196f3;
+  // fill: #2196f3;
   transform: transition;
 }
 
@@ -114,10 +114,36 @@
 
   color: #757575;
 }
+.mobile-menu-item.active a {
+  color: #2196f3;
+}
+.mobile__phone {
+  display: block;
+  margin-bottom: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
 
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mobile__mail {
+  display: block;
+  margin-bottom: 64px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
 .mobile-socials {
   display: flex;
-  gap: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -126,4 +152,24 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+}
+.mobile-social-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mobile-socials-item::after {
+  content: "";
+  margin: 0 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+.mobile-socials-item:last-child::after {
+  content: none;
 }

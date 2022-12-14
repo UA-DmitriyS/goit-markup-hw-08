@@ -40,7 +40,8 @@
     color: var(--logo-text-color);
   }
 }
-.nav__link::after {
+.nav__link::after,
+.current::after {
   content: "";
   position: absolute;
   left: 50%;

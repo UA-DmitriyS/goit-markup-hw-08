@@ -132,8 +132,8 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -142,6 +142,18 @@ img {
   transition: opacity 250ms, -webkit-transform 250ms;
   transition: transform 250ms, opacity 250ms;
   transition: transform 250ms, opacity 250ms, -webkit-transform 250ms;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -318,12 +330,17 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    font-size: 14px;
+  }
 }
 
 .modal-form-agreement-link {
@@ -550,6 +567,9 @@ img {
   .team__card {
     width: 270px;
   }
+}
+.team__card img {
+  width: 100%;
 }
 
 .team__list {
@@ -808,7 +828,8 @@ img {
   color: var(--logo-text-color);
 }
 
-.nav__link::after {
+.nav__link::after,
+.current::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -916,6 +937,16 @@ img {
 
 .contacts.heder-cont:last-child {
   margin-left: 50px;
+}
+
+.current {
+  color: #2196f3;
+}
+
+.current::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+  opacity: 1;
 }
 
 .ftr {
@@ -1221,8 +1252,8 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1231,6 +1262,18 @@ img {
   transition: opacity 250ms, -webkit-transform 250ms;
   transition: transform 250ms, opacity 250ms;
   transition: transform 250ms, opacity 250ms, -webkit-transform 250ms;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1407,12 +1450,17 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    font-size: 14px;
+  }
 }
 
 .modal-form-agreement-link {
@@ -1627,7 +1675,6 @@ img {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  fill: #2196f3;
   -webkit-transform: transition;
           transform: transition;
 }
@@ -1703,11 +1750,38 @@ img {
   color: #757575;
 }
 
+.mobile-menu-item.active a {
+  color: #2196f3;
+}
+
+.mobile__phone {
+  display: block;
+  margin-bottom: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile__mail {
+  display: block;
+  margin-bottom: 64px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .mobile-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1715,4 +1789,26 @@ img {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.mobile-social-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-socials-item::after {
+  content: "";
+  margin: 0 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mobile-socials-item:last-child::after {
+  content: none;
 }/*# sourceMappingURL=main.css.map */
